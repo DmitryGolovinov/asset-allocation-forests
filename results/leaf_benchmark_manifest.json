@@ -1,0 +1,23 @@
+{
+ "command": "python scripts/leaf_benchmark.py",
+ "environment": {
+  "machine": "arm64",
+  "packages": {
+   "clarabel": "0.11.1",
+   "cvxpy": "1.9.3",
+   "numpy": "2.4.6",
+   "scipy": "1.17.1"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.3"
+ },
+ "note": "runtimes are wall-clock on the machine that ran it and indicative only",
+ "outputs": {
+  "leaf_benchmark.csv": "b4f9bd67b3eeaa9500a9a9ad63f95071f4679021149d2730ff35c8c77400b1e2"
+ },
+ "runtime_seconds": 24.788568749965634,
+ "source_tree_sha256": "707e3bea60a8819a5ca3b3f645ee31c4dd75f71bdce863dba15f56a342131bb1",
+ "study": "asset-allocation-forests / leaf-solver benchmark (synthetic instances)",
+ "written_utc": "2026-09-25T01:41:48Z"
+}

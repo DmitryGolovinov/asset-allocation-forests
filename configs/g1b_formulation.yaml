@@ -1,0 +1,18 @@
+# Generation 1b: leaf-formulation comparison. Written 2026-09-24 BEFORE any relaxed-forest result
+# and before any French final computation. Informed by the formulation question (the paper's
+# equality constraint w'Sigma w = sigma_EW^2 versus the convex w'Sigma w <= sigma_EW^2), not by
+# development outcomes of the relaxed forest (none exist).
+question: >
+  What does the paper's risk EQUALITY cost or buy relative to the convex inequality, at forest
+  level: gross and net Sharpe ratio, realized volatility, turnover and concentration?
+formulations:
+  equality: {leaf: "max mu'w s.t. w'Sigma w = sigma_EW^2, 1'w = 1, w >= 0", solver: face enumeration}
+  relaxed: {leaf: "max mu'w s.t. w'Sigma w <= sigma_EW^2, 1'w = 1, w >= 0",
+            solver: "slack best-mean vertex (or min-variance tied face) if within risk; else the equality optimum (proof in leaf.solve_leaf_relaxed_exact)",
+            split_criterion: "leaf Sharpe ratio of the solution (its own volatility when slack)"}
+unchanged: [forest hyperparameters, seeds, costs, extension family, bootstrap, datasets, splits]
+samples:
+  archival_hw3: previously viewed; descriptive comparison only
+  transfer_french5_dev: 1947-07..2018-12 development
+  transfer_french5_final: 2019-01..2026-07 reserved; both formulations run once after freeze
+primary: paired block-bootstrap net Sharpe difference relaxed minus equality (AAF), base cost

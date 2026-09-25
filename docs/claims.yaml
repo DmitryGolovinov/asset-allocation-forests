@@ -1,0 +1,55 @@
+# Seed-0 rows are cited (seed means and dispersion are in reports/results_*.md).
+manifests: [results/archival_hw3_dev/manifest.json, results/transfer_french5_dev/manifest.json, results/transfer_french5_final/manifest.json, results/transfer_french5_final_relaxed/manifest.json, results/transfer_french5_dev_relaxed/manifest.json, results/transfer_french5_final/evaluation_diagnostics_manifest.json, results/leaf_benchmark_manifest.json, results/paired_value_gap_manifest.json]
+claims:
+  - {id: a_aaf_sr, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: SR_gross}, value: 0.64, tol: 0.005}
+  - {id: a_aaf_to, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: TO_pct}, value: 82.8, decimals: 1, tol: 0.000604}
+  - {id: a_ew_sr, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: EW, seed: 0, cost: 0.002}, column: SR_gross}, value: 0.52, tol: 0.005}
+  - {id: a_ew_to, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: EW, seed: 0, cost: 0.002}, column: TO_pct}, value: 27.05, tol: 0.000185}
+  - {id: a_sr_sr, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: SR, seed: 0, cost: 0.002}, column: SR_gross}, value: 0.60, tol: 0.005}
+  - {id: a_aaf_net, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: SR_net}, value: 0.62, tol: 0.005}
+  - {id: a_q_net, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF_quarterly, seed: 0, cost: 0.002}, column: SR_net}, value: 0.63, tol: 0.005}
+  - {id: a_q_to, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF_quarterly, seed: 0, cost: 0.002}, column: TO_pct}, value: 42.7, decimals: 1, tol: 0.00117}
+  - {id: a_ew_net, file: results/archival_hw3_dev/summary.csv, kind: csv, selector: {filter: {strategy: EW, seed: 0, cost: 0.002}, column: SR_net}, value: 0.52, tol: 0.005}
+  - {id: a_boot, file: results/archival_hw3_dev/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.diff, value: 0.10, tol: 0.005}
+  - {id: a_boot_lo, file: results/archival_hw3_dev/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_lo, value: -0.08, tol: 0.005}
+  - {id: a_boot_hi, file: results/archival_hw3_dev/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_hi, value: 0.35, tol: 0.005}
+  - {id: f_aaf_net, file: results/transfer_french5_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: SR_net}, value: 0.55, tol: 0.005}
+  - {id: f_ew_net, file: results/transfer_french5_dev/summary.csv, kind: csv, selector: {filter: {strategy: EW, seed: 0, cost: 0.002}, column: SR_net}, value: 0.57, tol: 0.005}
+  - {id: f_aaf_to, file: results/transfer_french5_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: TO_pct}, value: 169.1, decimals: 1, tol: 0.000296}
+  - {id: f_boot, file: results/transfer_french5_dev/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.diff, value: -0.02, tol: 0.005}
+  - {id: f_boot_lo, file: results/transfer_french5_dev/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_lo, value: -0.07, tol: 0.005}
+  - {id: f_boot_hi, file: results/transfer_french5_dev/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_hi, value: 0.04, tol: 0.005}
+  - {id: paper_aaf_sr, kind: external, source: "paper Table 5 (supplied version)", value: 0.68}
+  - {id: paper_aaf_to, kind: external, source: "paper Table 5", value: 81.51}
+  - {id: paper_ew_sr, kind: external, source: "paper Table 5", value: 0.50}
+  - {id: paper_ew_to, kind: external, source: "paper Table 5", value: 26.94}
+  - {id: paper_sr_sr, kind: external, source: "paper Table 5", value: 0.58}
+  - {id: fin_aaf_net, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: SR_net}, value: 0.77, decimals: 2, tol: 0.005}
+  - {id: fin_ew_net, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: EW, seed: 0, cost: 0.002}, column: SR_net}, value: 0.83, decimals: 2, tol: 0.005}
+  - {id: fin_aaf_to, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: TO_pct}, value: 178, decimals: 0, tol: 0.00281}
+  - {id: fin_ew_to, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: EW, seed: 0, cost: 0.002}, column: TO_pct}, value: 24, decimals: 0, tol: 0.0208}
+  - {id: fin_shr_net, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: AAF_shrunk, seed: 0, cost: 0.002}, column: SR_net}, value: 0.82, decimals: 2, tol: 0.005}
+  - {id: fin_shr_to, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: AAF_shrunk, seed: 0, cost: 0.002}, column: TO_pct}, value: 36, decimals: 0, tol: 0.0139}
+  - {id: fin_q_net, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: AAF_quarterly, seed: 0, cost: 0.002}, column: SR_net}, value: 0.78, decimals: 2, tol: 0.005}
+  - {id: fin_rx_net, file: results/transfer_french5_final_relaxed/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: SR_net}, value: 0.77, decimals: 2, tol: 0.005}
+  - {id: dev_rx_net, file: results/transfer_french5_dev_relaxed/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 0, cost: 0.002}, column: SR_net}, value: 0.54, decimals: 2, tol: 0.005}
+  - {id: dev_shr_net, file: results/transfer_french5_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF_shrunk, seed: 0, cost: 0.002}, column: SR_net}, value: 0.55, decimals: 2, tol: 0.005}
+  - {id: dev_q_net, file: results/transfer_french5_dev/summary.csv, kind: csv, selector: {filter: {strategy: AAF_quarterly, seed: 0, cost: 0.002}, column: SR_net}, value: 0.57, decimals: 2, tol: 0.005}
+  - {id: fin_boot_lo, file: results/transfer_french5_final/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_lo, value: -0.22, tol: 0.005}
+  - {id: fin_boot_hi, file: results/transfer_french5_final/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_hi, value: 0.08, tol: 0.005}
+  - {id: fin_shr_gap, file: results/transfer_french5_final/bootstrap_seed0.json, kind: json, selector: AAF_shrunk_minus_EW.diff, value: -0.01, tol: 0.005}
+  - {id: fin_form, file: results/transfer_french5_final_formulations.json, kind: json, selector: strategies.AAF.rx_minus_eq_net_SR.diff, value: -0.004, decimals: 3, tol: 0.0005}
+  - {id: fin_form_lo, file: results/transfer_french5_final_formulations.json, kind: json, selector: strategies.AAF.rx_minus_eq_net_SR.ci_lo, value: -0.017, decimals: 3, tol: 0.0005}
+  - {id: fin_form_hi, file: results/transfer_french5_final_formulations.json, kind: json, selector: strategies.AAF.rx_minus_eq_net_SR.ci_hi, value: 0.014, decimals: 3, tol: 0.0005}
+  - {id: fin_slack, file: results/transfer_french5_final_formulations.json, kind: json, selector: rx_slack_share_of_leaf_solves, scale: 100, value: 14, decimals: 0, tol: 0.0357}
+  - {id: diff_005, file: results/transfer_french5_final/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.diff, scale: -1, value: 0.05, tol: 0.005}
+  - {id: gap_001, file: results/transfer_french5_final/bootstrap_seed0.json, kind: json, selector: AAF_shrunk_minus_EW.diff, scale: -1, value: 0.01, tol: 0.005}
+  - {id: arch_form, file: results/archival_hw3_dev_formulations.json, kind: json, selector: strategies.AAF.rx_minus_eq_net_SR.diff, value: -0.017, decimals: 3, tol: 0.0005}
+  - {id: arch_form_lo, file: results/archival_hw3_dev_formulations.json, kind: json, selector: strategies.AAF.rx_minus_eq_net_SR.ci_lo, value: -0.036, decimals: 3, tol: 0.0005}
+  - {id: arch_form_hi, file: results/archival_hw3_dev_formulations.json, kind: json, selector: strategies.AAF.rx_minus_eq_net_SR.ci_hi, value: -0.003, decimals: 3, tol: 0.0005}
+  - {id: fin_aaf_net_s1, file: results/transfer_french5_final/summary.csv, kind: csv, selector: {filter: {strategy: AAF, seed: 1, cost: 0.002}, column: SR_net}, value: 0.78, decimals: 2, tol: 0.005}
+  - {id: gap_share, file: results/paired_value_gap_summary.json, kind: json, selector: by.all.strict_gap_share, scale: 100, value: 18.1, decimals: 1, tol: 0.00276}
+  - {id: gap_median_bps, file: results/paired_value_gap_summary.json, kind: json, selector: by.all.median_gap_bps_per_month_given_gap, value: 6.7, decimals: 1, tol: 0.00746}
+  - {id: f_final_ci_width, file: results/transfer_french5_final/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_hi, minus: AAF_minus_EW.ci_lo, value: 0.31, tol: 0.005}
+  - {id: f_final_ci_halfwidth, file: results/transfer_french5_final/bootstrap_seed0.json, kind: json, selector: AAF_minus_EW.ci_hi, minus: AAF_minus_EW.ci_lo, scale: 0.5, value: 0.15, tol: 0.005}
+  - {id: exante_final_months, file: results/transfer_french5_final/evaluation_diagnostics.json, kind: json, selector: seeds.0.exante_vol_ratio_scored_months.mean, value: 0.973, decimals: 3, tol: 0.0005}

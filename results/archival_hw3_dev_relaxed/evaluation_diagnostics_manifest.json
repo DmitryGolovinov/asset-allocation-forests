@@ -1,0 +1,22 @@
+{
+ "command": "python scripts/evaluation_diagnostics.py archival_hw3_dev_relaxed",
+ "environment": {
+  "machine": "arm64",
+  "packages": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.6"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.3"
+ },
+ "inputs": {
+  "run_manifest_source_tree": "3f7791215aca84016d8d52ded3975aca4c617eb66fbea3d917ab0a390baed575"
+ },
+ "outputs": {
+  "evaluation_diagnostics.json": "a654c542bbfc561c00da10b8871481eadb17fe751221093a28c17382a11fe770"
+ },
+ "source_tree_sha256": "707e3bea60a8819a5ca3b3f645ee31c4dd75f71bdce863dba15f56a342131bb1",
+ "study": "asset-allocation-forests / scored-month diagnostics of archival_hw3_dev_relaxed",
+ "written_utc": "2026-09-25T01:54:28Z"
+}

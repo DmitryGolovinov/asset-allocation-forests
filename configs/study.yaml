@@ -1,0 +1,27 @@
+# AAF protocol. Frozen before development results were inspected.
+forest: {n_trees: 200, max_depth: 3, min_leaf: 36, refit_months: 12}
+seeds: [0, 1, 2]
+costs: {grid: [0.0, 0.002, 0.005], base: 0.002}      # per unit turnover (paper: 20 and 50 bps)
+extension:
+  alpha_grid: [0.0, 0.25, 0.5, 0.75, 1.0]   # w = alpha * AAF + (1 - alpha) * EW
+  band_grid: [0.0, 0.05, 0.10, 0.20, 0.30]  # no-trade band on ||target - drifted||_1
+  lowfreq_every: 3                          # quarterly AAF updates
+  min_history_months: 36                    # prior OOS months needed before choosing
+  default_alpha: 0.5
+  default_band: 0.10
+  selection_score: net Sharpe at base cost on prior out-of-sample months
+blocks_months: 60
+bootstrap: {block_months: 12, n_boot: 2000}
+datasets:
+  archival_hw3:
+    path: data/HW3_dataset.xlsx
+    mtry: 4                                  # paper: 4 of 14
+    first_oos: "2003-08-31"                  # paper's out-of-sample start
+    last_oos: "2023-01-31"
+    status: previously viewed (original notebook); archival reproduction, no untouched claim
+  transfer_french5:
+    mtry: 6                                  # 1/3 of 18 return-derived features
+    first_oos: "1947-07-31"                  # after 20 years of training data (from 1927-07)
+    dev_end: "2018-12-31"
+    final_start: "2019-01-31"                # reserved final sample (Stage 3)
+    final_end: "2026-07-31"

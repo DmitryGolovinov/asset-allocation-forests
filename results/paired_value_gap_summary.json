@@ -1,0 +1,140 @@
+{
+ "design": {
+  "dataset": "transfer_french5 (development only)",
+  "origins": [
+   "1970-01-31",
+   "1990-01-31",
+   "2010-01-31"
+  ],
+  "seed": 0,
+  "trees_per_forest": 200,
+  "formulations_grown": [
+   "equality",
+   "relaxed"
+  ]
+ },
+ "fits": [
+  {
+   "origin": "1970-01-31",
+   "train_months": 510,
+   "leaf": "equality",
+   "problems": 46737,
+   "seconds": 6.915568416996393
+  },
+  {
+   "origin": "1970-01-31",
+   "train_months": 510,
+   "leaf": "relaxed",
+   "problems": 48479,
+   "seconds": 5.583127291989513
+  },
+  {
+   "origin": "1990-01-31",
+   "train_months": 750,
+   "leaf": "equality",
+   "problems": 51316,
+   "seconds": 8.738929042010568
+  },
+  {
+   "origin": "1990-01-31",
+   "train_months": 750,
+   "leaf": "relaxed",
+   "problems": 51776,
+   "seconds": 8.489510374958627
+  },
+  {
+   "origin": "2010-01-31",
+   "train_months": 990,
+   "leaf": "equality",
+   "problems": 59601,
+   "seconds": 9.839096624986269
+  },
+  {
+   "origin": "2010-01-31",
+   "train_months": 990,
+   "leaf": "relaxed",
+   "problems": 59423,
+   "seconds": 8.062287083012052
+  }
+ ],
+ "problems": 317332,
+ "resolution": 1e-09,
+ "clarabel_sample": {
+  "binding": 3000,
+  "slack": 1000
+ },
+ "evaluation_seconds": 698.6570829579723,
+ "clarabel_seconds": 9.00108670804184,
+ "total_seconds": 757.438941875007,
+ "by": {
+  "all": {
+   "problems": 317332,
+   "slack_status_share": 0.18136210656347296,
+   "strict_gap_share": 0.1812738708986172,
+   "slack_without_gap": 28,
+   "gap_without_slack": 0,
+   "condition_matches_gap": 1.0,
+   "slack_problems": 57552,
+   "unresolved_problems": 0,
+   "condition_matches_gap_on_slack_resolved": 1.0,
+   "condition_mismatches_resolved": 0,
+   "clarabel_binding_problems": 3000,
+   "clarabel_slack_problems": 1000,
+   "max_clarabel_minus_eq_on_binding": -2.007213839583244e-11,
+   "max_abs_clarabel_minus_exact_rx": 1.1284604493899675e-08,
+   "max_abs_clarabel_rel_var_gap_on_binding": 0.004331394678992977,
+   "median_clarabel_rel_var_gap_on_binding": -5.974772068069793e-08,
+   "best_minus_second_mean_at_max_clarabel_var_gap": 1.2468827928491244e-07,
+   "tied_best_mean_problems": 44,
+   "max_rel_a_kkt_minus_clarabel_tied": -2.046881908640785e-14,
+   "median_gap_bps_per_month_given_gap": 6.691326868589788,
+   "max_eq_feasibility_residual": 1.0123403862909945e-15
+  },
+  "equality": {
+   "problems": 157654,
+   "slack_status_share": 0.17810521775533764,
+   "strict_gap_share": 0.17801007269082927,
+   "slack_without_gap": 15,
+   "gap_without_slack": 0,
+   "condition_matches_gap": 1.0,
+   "slack_problems": 28079,
+   "unresolved_problems": 0,
+   "condition_matches_gap_on_slack_resolved": 1.0,
+   "condition_mismatches_resolved": 0,
+   "clarabel_binding_problems": 1461,
+   "clarabel_slack_problems": 487,
+   "max_clarabel_minus_eq_on_binding": -2.6894368676533276e-11,
+   "max_abs_clarabel_minus_exact_rx": 9.844832141777532e-09,
+   "max_abs_clarabel_rel_var_gap_on_binding": 0.004331394678992977,
+   "median_clarabel_rel_var_gap_on_binding": -6.214382217105758e-08,
+   "best_minus_second_mean_at_max_clarabel_var_gap": 1.2468827928491244e-07,
+   "tied_best_mean_problems": 25,
+   "max_rel_a_kkt_minus_clarabel_tied": -2.046881908640785e-14,
+   "median_gap_bps_per_month_given_gap": 6.6114862591758365,
+   "max_eq_feasibility_residual": 1.0123403862909945e-15
+  },
+  "relaxed": {
+   "problems": 159678,
+   "slack_status_share": 0.18457771264670148,
+   "strict_gap_share": 0.1844962988013377,
+   "slack_without_gap": 13,
+   "gap_without_slack": 0,
+   "condition_matches_gap": 1.0,
+   "slack_problems": 29473,
+   "unresolved_problems": 0,
+   "condition_matches_gap_on_slack_resolved": 1.0,
+   "condition_mismatches_resolved": 0,
+   "clarabel_binding_problems": 1539,
+   "clarabel_slack_problems": 513,
+   "max_clarabel_minus_eq_on_binding": -2.007213839583244e-11,
+   "max_abs_clarabel_minus_exact_rx": 1.1284604493899675e-08,
+   "max_abs_clarabel_rel_var_gap_on_binding": 9.23515072012312e-05,
+   "median_clarabel_rel_var_gap_on_binding": -5.8518650418888666e-08,
+   "best_minus_second_mean_at_max_clarabel_var_gap": 4.575163398690997e-06,
+   "tied_best_mean_problems": 19,
+   "max_rel_a_kkt_minus_clarabel_tied": -2.046881908640785e-14,
+   "median_gap_bps_per_month_given_gap": 6.757602703024307,
+   "max_eq_feasibility_residual": 1.0123403862909945e-15
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "industries": {
+  "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/5_Industry_Portfolios_CSV.zip",
+  "sha256": "e11b4144971ed28b5b393ffc19d52433e3fa36b09092124785018d08b4c61066",
+  "bytes": 66242,
+  "last_modified": "Fri, 04 Sep 2026 14:47:49 GMT",
+  "retrieved_utc": "2026-09-24T01:03:23.332778+00:00"
+ },
+ "factors": {
+  "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip",
+  "sha256": "b840dba55d319f4818fc7300e65c52eff5f64870c8d495fa58ff5d4cd749f5eb",
+  "bytes": 13067,
+  "last_modified": "Fri, 04 Sep 2026 14:47:39 GMT",
+  "retrieved_utc": "2026-09-24T01:03:23.399841+00:00"
+ }
+}

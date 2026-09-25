@@ -1,0 +1,61 @@
+{
+ "command": "python scripts/run_study.py --dataset transfer_french5 --mode final --leaf equality",
+ "config_sha256": "2edeb4d0f2a4ecb0c11dbbb95b2800f3d7ef58a83b63f06ea65d0ab7e5a5c12b",
+ "data": {
+  "factors": {
+   "bytes": 13067,
+   "last_modified": "Fri, 04 Sep 2026 14:47:39 GMT",
+   "retrieved_utc": "2026-09-24T01:03:23.399841+00:00",
+   "sha256": "b840dba55d319f4818fc7300e65c52eff5f64870c8d495fa58ff5d4cd749f5eb",
+   "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip"
+  },
+  "industries": {
+   "bytes": 66242,
+   "last_modified": "Fri, 04 Sep 2026 14:47:49 GMT",
+   "retrieved_utc": "2026-09-24T01:03:23.332778+00:00",
+   "sha256": "e11b4144971ed28b5b393ffc19d52433e3fa36b09092124785018d08b4c61066",
+   "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/5_Industry_Portfolios_CSV.zip"
+  }
+ },
+ "dataset": "transfer_french5",
+ "environment": {
+  "machine": "arm64",
+  "packages": {
+   "cvxpy": "1.9.3",
+   "joblib": "1.6.0",
+   "numpy": "2.4.6",
+   "openpyxl": "3.1.5",
+   "pandas": "3.0.6",
+   "scipy": "1.17.1"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.3"
+ },
+ "evaluation": {
+  "first": "2019-01-31",
+  "last": "2026-07-31",
+  "months": 91,
+  "walk_forward_start": "1947-07-31"
+ },
+ "git_commit": null,
+ "leaf_formulation": "equality",
+ "mode": "final",
+ "outputs": {
+  "blocks.csv": "410bcfddd52e8c6b111783eacd195f55d4af920bc80636678aeb7084f08371e7",
+  "bootstrap_seed0.json": "4235a85239ee206763c36b6ea2baba4dc564ee03fc7a41e453e8cedff82c8f4d",
+  "diagnostics.json": "431c18d5c740f3d66cf4405c04b0335465bb23a323c922e9feb63e668260081b",
+  "extension_choices.json": "6ffc0ffd8b40844560d7da3cd1aa291df9c78ee39545f07e90ea1f227be11f93",
+  "summary.csv": "85c77fc2c8b79b1049bb5031b39655bb1aa2d8e863f918fcca38f4cab8bfa00e"
+ },
+ "runtime_seconds": 636.2053415420232,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "source_tree_sha256": "3f7791215aca84016d8d52ded3975aca4c617eb66fbea3d917ab0a390baed575",
+ "status": "final evaluation (reserved sample)",
+ "study": "asset-allocation-forests",
+ "written_utc": "2026-09-24T05:34:20Z"
+}

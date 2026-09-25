@@ -1,0 +1,99 @@
+{
+ "run": "transfer_french5_final",
+ "evaluation": {
+  "first": "2019-01-31",
+  "last": "2026-07-31",
+  "months": 91,
+  "walk_forward_start": "1947-07-31"
+ },
+ "refit_months": 12,
+ "seeds": {
+  "0": {
+   "exante_vol_ratio_scored_months": {
+    "count": 91.0,
+    "mean": 0.973485239639554,
+    "std": 0.0030669835811279757,
+    "min": 0.9675921731627545,
+    "max": 0.9858899173356145
+   },
+   "exante_vol_ratio_all_months_matches_stored": true,
+   "refits_used_for_scored_months": [
+    "2018-07-31",
+    "2019-07-31",
+    "2020-07-31",
+    "2021-07-31",
+    "2022-07-31",
+    "2023-07-31",
+    "2024-07-31",
+    "2025-07-31",
+    "2026-07-31"
+   ],
+   "leaf_solves": 567832,
+   "exact_path_fallbacks": 332,
+   "slack_leaf_solves": 0,
+   "max_abs_global_objective_minus_multistart_ref": 6.664807594702893e-15,
+   "max_global_feasibility_residual": 3.1723142502363715e-16,
+   "max_relaxed_minus_equality_global_objective": -4.5727975052367587e-10,
+   "min_relaxed_var_over_ew_var": 0.9999988238047732,
+   "max_cond_train_cov": 38.89761394856279
+  },
+  "1": {
+   "exante_vol_ratio_scored_months": {
+    "count": 91.0,
+    "mean": 0.973495652302531,
+    "std": 0.002891053178562505,
+    "min": 0.9669939068764728,
+    "max": 0.9824166667545093
+   },
+   "exante_vol_ratio_all_months_matches_stored": true,
+   "refits_used_for_scored_months": [
+    "2018-07-31",
+    "2019-07-31",
+    "2020-07-31",
+    "2021-07-31",
+    "2022-07-31",
+    "2023-07-31",
+    "2024-07-31",
+    "2025-07-31",
+    "2026-07-31"
+   ],
+   "leaf_solves": 568027,
+   "exact_path_fallbacks": 297,
+   "slack_leaf_solves": 0,
+   "max_abs_global_objective_minus_multistart_ref": 6.664807594702893e-15,
+   "max_global_feasibility_residual": 3.1723142502363715e-16,
+   "max_relaxed_minus_equality_global_objective": -4.5727975052367587e-10,
+   "min_relaxed_var_over_ew_var": 0.9999988238047732,
+   "max_cond_train_cov": 38.89761394856279
+  },
+  "2": {
+   "exante_vol_ratio_scored_months": {
+    "count": 91.0,
+    "mean": 0.9730580548841713,
+    "std": 0.002482501945763541,
+    "min": 0.9680376964479495,
+    "max": 0.9792407369679846
+   },
+   "exante_vol_ratio_all_months_matches_stored": true,
+   "refits_used_for_scored_months": [
+    "2018-07-31",
+    "2019-07-31",
+    "2020-07-31",
+    "2021-07-31",
+    "2022-07-31",
+    "2023-07-31",
+    "2024-07-31",
+    "2025-07-31",
+    "2026-07-31"
+   ],
+   "leaf_solves": 568330,
+   "exact_path_fallbacks": 273,
+   "slack_leaf_solves": 0,
+   "max_abs_global_objective_minus_multistart_ref": 6.664807594702893e-15,
+   "max_global_feasibility_residual": 3.1723142502363715e-16,
+   "max_relaxed_minus_equality_global_objective": -4.5727975052367587e-10,
+   "min_relaxed_var_over_ew_var": 0.9999988238047732,
+   "max_cond_train_cov": 38.89761394856279
+  }
+ }
+}

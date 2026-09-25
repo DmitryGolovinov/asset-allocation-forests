@@ -1,0 +1,49 @@
+{
+ "command": "python scripts/run_study.py --dataset archival_hw3 --mode dev --leaf relaxed",
+ "config_sha256": "2edeb4d0f2a4ecb0c11dbbb95b2800f3d7ef58a83b63f06ea65d0ab7e5a5c12b",
+ "data": {
+  "path": "data/HW3_dataset.xlsx",
+  "sha256": "1ab898b9dc3be766672a6f86754c566bc8fdbe8e90aa34fe627646a4664a1957"
+ },
+ "dataset": "archival_hw3",
+ "environment": {
+  "machine": "arm64",
+  "packages": {
+   "cvxpy": "1.9.3",
+   "joblib": "1.6.0",
+   "numpy": "2.4.6",
+   "openpyxl": "3.1.5",
+   "pandas": "3.0.6",
+   "scipy": "1.17.1"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.3"
+ },
+ "evaluation": {
+  "first": "2003-08-31",
+  "last": "2023-01-31",
+  "months": 234,
+  "walk_forward_start": "2003-08-31"
+ },
+ "git_commit": null,
+ "leaf_formulation": "relaxed",
+ "mode": "dev",
+ "outputs": {
+  "blocks.csv": "a869ca785fee2697c863218f9057ae7a3b5c6f09cfb524bc79390604fe69f708",
+  "bootstrap_seed0.json": "7f317d738a5fc0f6f18b9172af01b231d1aafda096989a7f7b4cbd122c232aa9",
+  "diagnostics.json": "6aa7e6d699cbfd68cdaa3e8973ca9721f30baa99432a1281d79e80db84e4ebac",
+  "extension_choices.json": "f7c6eac97fa15e8de9769fc2af8f55342963dc8088e34fc18a9326faa242ee57",
+  "summary.csv": "c744ff89a3c126b1c8c3ba19419667b393232fecf33a14ebd6e7f2c512e2615f"
+ },
+ "runtime_seconds": 88.30727883300278,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "source_tree_sha256": "3f7791215aca84016d8d52ded3975aca4c617eb66fbea3d917ab0a390baed575",
+ "status": "previously viewed (original notebook); archival reproduction, no untouched claim",
+ "study": "asset-allocation-forests",
+ "written_utc": "2026-09-24T05:09:55Z"
+}

@@ -1,0 +1,24 @@
+{
+ "command": "python scripts/paired_value_gap.py",
+ "environment": {
+  "machine": "arm64",
+  "packages": {
+   "clarabel": "0.11.1",
+   "cvxpy": "1.9.3",
+   "numpy": "2.4.6",
+   "pandas": "3.0.6",
+   "scipy": "1.17.1"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.3"
+ },
+ "outputs": {
+  "paired_value_gap.csv": "2c3b85cb841ab51f0fa791e2d01252f1d37ee7113ad8272b5c492e36ae916d0f",
+  "paired_value_gap_summary.json": "c70320eb07d460cdb860cd77ec99462bd84816226e4a1f657418b54fab59d715"
+ },
+ "runtime_seconds": 757.438941875007,
+ "source_tree_sha256": "707e3bea60a8819a5ca3b3f645ee31c4dd75f71bdce863dba15f56a342131bb1",
+ "study": "asset-allocation-forests / paired relaxation value gap (development forests)",
+ "written_utc": "2026-09-25T01:54:26Z"
+}

@@ -1,0 +1,132 @@
+{
+ "run": "archival_hw3_dev_relaxed",
+ "evaluation": {
+  "first": "2003-08-31",
+  "last": "2023-01-31",
+  "months": 234,
+  "walk_forward_start": "2003-08-31"
+ },
+ "refit_months": 12,
+ "seeds": {
+  "0": {
+   "exante_vol_ratio_scored_months": {
+    "count": 234.0,
+    "mean": 0.9402111030282031,
+    "std": 0.028942125120598534,
+    "min": 0.8798900605528541,
+    "max": 1.0259872049212686
+   },
+   "exante_vol_ratio_all_months_matches_stored": true,
+   "refits_used_for_scored_months": [
+    "2003-08-31",
+    "2004-08-31",
+    "2005-08-31",
+    "2006-08-31",
+    "2007-08-31",
+    "2008-08-31",
+    "2009-08-31",
+    "2010-08-31",
+    "2011-08-31",
+    "2012-08-31",
+    "2013-08-31",
+    "2014-08-31",
+    "2015-08-31",
+    "2016-08-31",
+    "2017-08-31",
+    "2018-08-31",
+    "2019-08-31",
+    "2020-08-31",
+    "2021-08-31",
+    "2022-08-31"
+   ],
+   "leaf_solves": 629597,
+   "exact_path_fallbacks": 10,
+   "slack_leaf_solves": 21791,
+   "max_abs_global_objective_minus_multistart_ref": 3.4867941867133823e-16,
+   "max_global_feasibility_residual": 4.654194653832836e-16,
+   "max_relaxed_minus_equality_global_objective": -4.2762774224436306e-11,
+   "min_relaxed_var_over_ew_var": 0.9999976210309018,
+   "max_cond_train_cov": 174.36977415518703
+  },
+  "1": {
+   "exante_vol_ratio_scored_months": {
+    "count": 234.0,
+    "mean": 0.9388760552408612,
+    "std": 0.03051313760365903,
+    "min": 0.8802037075750736,
+    "max": 1.0299235406165739
+   },
+   "exante_vol_ratio_all_months_matches_stored": true,
+   "refits_used_for_scored_months": [
+    "2003-08-31",
+    "2004-08-31",
+    "2005-08-31",
+    "2006-08-31",
+    "2007-08-31",
+    "2008-08-31",
+    "2009-08-31",
+    "2010-08-31",
+    "2011-08-31",
+    "2012-08-31",
+    "2013-08-31",
+    "2014-08-31",
+    "2015-08-31",
+    "2016-08-31",
+    "2017-08-31",
+    "2018-08-31",
+    "2019-08-31",
+    "2020-08-31",
+    "2021-08-31",
+    "2022-08-31"
+   ],
+   "leaf_solves": 630779,
+   "exact_path_fallbacks": 4,
+   "slack_leaf_solves": 21834,
+   "max_abs_global_objective_minus_multistart_ref": 3.4867941867133823e-16,
+   "max_global_feasibility_residual": 4.654194653832836e-16,
+   "max_relaxed_minus_equality_global_objective": -4.2762774224436306e-11,
+   "min_relaxed_var_over_ew_var": 0.9999976210309018,
+   "max_cond_train_cov": 174.36977415518703
+  },
+  "2": {
+   "exante_vol_ratio_scored_months": {
+    "count": 234.0,
+    "mean": 0.9388029368487688,
+    "std": 0.029483700122020177,
+    "min": 0.880939685589059,
+    "max": 1.0170628072041559
+   },
+   "exante_vol_ratio_all_months_matches_stored": true,
+   "refits_used_for_scored_months": [
+    "2003-08-31",
+    "2004-08-31",
+    "2005-08-31",
+    "2006-08-31",
+    "2007-08-31",
+    "2008-08-31",
+    "2009-08-31",
+    "2010-08-31",
+    "2011-08-31",
+    "2012-08-31",
+    "2013-08-31",
+    "2014-08-31",
+    "2015-08-31",
+    "2016-08-31",
+    "2017-08-31",
+    "2018-08-31",
+    "2019-08-31",
+    "2020-08-31",
+    "2021-08-31",
+    "2022-08-31"
+   ],
+   "leaf_solves": 629636,
+   "exact_path_fallbacks": 8,
+   "slack_leaf_solves": 22479,
+   "max_abs_global_objective_minus_multistart_ref": 3.4867941867133823e-16,
+   "max_global_feasibility_residual": 4.654194653832836e-16,
+   "max_relaxed_minus_equality_global_objective": -4.2762774224436306e-11,
+   "min_relaxed_var_over_ew_var": 0.9999976210309018,
+   "max_cond_train_cov": 174.36977415518703
+  }
+ }
+}
